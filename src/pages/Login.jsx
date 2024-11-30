@@ -62,7 +62,7 @@ const Login = () => {
 updatePermissions(user.permissions);
 localStorage.setItem("permissions", JSON.stringify(user.permissions)); // Save permissions to localStorage
 setError("");
-      navigate("/Home"); // Change this to your home route
+      navigate("/rbac/home"); // Change this to your home route
     } else {
       setError("Invalid username or password.");
     }

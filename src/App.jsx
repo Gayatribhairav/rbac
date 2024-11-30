@@ -12,10 +12,10 @@ const App = () => {
       <Router>
         <Routes>
           {/* Public Routes */}
-          <Route path="/" element={<Login />} />
+          <Route path="/rbac" element={<Login />} />
           {/* Protected Route - Home */}
           <Route
-            path="/Home"
+            path="/rbac/home"
           //   element={
           // <ProtectedRoute
             element={<Home />}
@@ -27,7 +27,7 @@ const App = () => {
           />
             {/* }
             /> */}
-          <Route path="/Home2" element={<Home2 />} />
+          {/* <Route path="/rbac/Home2" element={<Home2 />} /> */}
         </Routes>
       </Router>
     </PermissionsProvider>
